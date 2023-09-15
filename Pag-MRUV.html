@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MRU</title>
+    <link rel="stylesheet" href="/Css/estilosMRUV.css" />
+  </head>
+  <body>
+    <div class="gridP">
+      <header class="header1">
+        <div class="navbar">
+          <div class="logo"></div>
+          <ul class="links">
+            <li>
+              <a href="index.html"><strong>Inicio</strong></a>
+            </li>
+            <li>
+              <a href="Pag-MRU.html"><strong>MRU</strong></a>
+            </li>
+            <li>
+              <a href="Pag-MRUV.html"><strong>MRUV</strong></a>
+            </li>
+          </ul>
+        </div>
+      </header>
+
+      <div class="contenido">
+        <div>
+          <h1>MRUV - Movimiento rectilineo uniformemente variado</h1>
+          <p>
+            El Movimiento Rectilíneo Uniformemente Variado (MRUV) es un tipo de movimiento en el que un 
+            objeto se desplaza en línea recta y cambia su velocidad de manera constante. En otras palabras, 
+            en un MRUV, 
+            un objeto acelera o desacelera de forma uniforme a medida que se mueve en línea recta.
+            <br><br>La clave para entender el MRUV está en dos conceptos importantes:
+          </p>
+          <ul>
+            <li>Aceleración constante: En un MRUV, la velocidad del objeto cambia en la misma cantidad en cada unidad de tiempo. 
+              Esto significa que la aceleración es constante durante todo el movimiento.</li><br><br>
+              <li>Velocidad inicial y final: El objeto en un MRUV tiene una velocidad inicial 
+                (la velocidad con la que comenzó su movimiento) y una velocidad final 
+                (la velocidad en un momento posterior). 
+                Estas velocidades pueden ser diferentes debido a la aceleración constante.</li><br>
+          </ul>
+          <p>El MRUV es un tipo de movimiento en línea recta en el que la velocidad del objeto cambia de 
+            manera uniforme debido a una aceleración constante. Este concepto es fundamental en la física y se 
+            aplica a una amplia gama de situaciones, desde automóviles 
+            acelerando en carreteras hasta objetos en caída libre bajo la influencia de la gravedad.</p>
+        </div>
+        <hr />
+        <div></div>
+        <div class="imagenes">
+          <img id="img1" src="Image/carro.gif" /><br>
+          <img id="img2" src="Image/mruv.png" />
+          <img id="img3" src="Image/mruv formula.jpg" />
+        </div>
+        <hr />
+        <h2>En este apartado podras resolver ejercicios ingresando los datos que tienes</h2>
+        <div class="formulas-area">
+          <form class="formulario">
+              <p><strong>Calcular Velocidad final <br> *no hay distancia </strong></p>
+              <label for="#">Dato Velocidad inicial</label> <br>
+              <input type="number" id="VFvelocidadi"  placeholder="velocidad inicial">
+              <br>
+              <label for="#">Dato aceleración</label> <br>
+              <input type="number" id="VFaceleracion"  placeholder="aceleracion">
+              <br>
+              <label for="#">Dato Tiempo</label> <br>
+              <input type="number" id="VFtiempo"  placeholder="tiempo">
+              
+              <br><br>
+              <button class="bt" type="button"  onclick="VelocidadfC()">Calcular</button>
+              <br><br>
+              <label for="#">La Velocidad final es: </label> <br>
+              <textarea name="VFresultado" id="VFresultado" cols="15" rows="1"></textarea>
+              <br><br>
+              <button class="bt" type="button"  onclick="limpiarVF()">nuevo</button>
+          </form>
+  
+
+
+
+
+
+
+
+          <form class="formulario">
+              <p><strong>Calcular Distancia <br> *no hay aceleración</strong></p>
+              <label for="#">Dato Velocidad inicial</label> <br>
+              <input type="number" id="Dvelocidadi"  placeholder="velocidad inicial">
+              <br>
+              <label for="#">Dato Velocidad final</label> <br>
+              <input type="number" id="Dvelocidadf"  placeholder="velocidad final">
+              <br>
+              <label for="#">Dato Tiempo</label> <br>
+              <input type="number" id="Dtiempo"  placeholder="tiempo">
+              <br><br>
+              <button class="bt" type="button"  onclick="DistanciaC1()">Calcular</button>
+              <br><br
+              <label for="#">La Distancia es: </label> <br>
+              <textarea name="Dresultado" id="Dresultado" cols="15" rows="1"></textarea>
+              <br><br>
+              <button class="bt" type="button"  onclick="limpiarD1()">nuevo</button>
+          </form>
+  
+
+
+
+
+          <form class="formulario">
+            <p><strong>Calcular Distancia <br> *no hay velocidad final</strong></p>
+            <label for="#">Dato Velocidad inicial</label> <br>
+            <input type="number" id="DVvelocidadi"  placeholder="velocidad inicial">
+            <br>
+            <label for="#">Dato Aceleracion</label> <br>
+            <input type="number" id="DVaceleracion"  placeholder="aceleracion">
+            <br>
+            <label for="#">Dato Tiempo</label> <br>
+            <input type="number" id="DVtiempo"  placeholder="tiempo">
+            <br><br>
+            <button class="bt" type="button"  onclick="DistanciavC1()">Calcular</button>
+            <br><br
+            <label for="#">La Distancia es: </label> <br>
+            <textarea name="Dresultado" id="DVresultado" cols="15" rows="1"></textarea>
+            <br><br>
+            <button class="bt" type="button"  onclick="limpiarDv()">nuevo</button>
+        </form>
+         
+
+
+
+
+
+
+
+
+          <form class="formulario">
+              <p><strong>Calcular Velocidad final <br>*no hay Tiempo</strong></p>
+              <label for="#">Dato Velocidad inicial</label> <br>
+              <input type="number" id="VFTvelocidadi"  placeholder="velocidad inicial">
+              <br>
+              <label for="#">Dato Aceleracion</label> <br>
+              <input type="number" id="VFTaceleracion"  placeholder="aceleracion">
+              <br>
+              <label for="#">Dato Distancia</label> <br>
+              <input type="number" id="VFTdistancia"  placeholder="distancia">
+              <br><br>
+              <button class="bt" type="button"  onclick="VelocidadfCt()">Calcular</button>
+              <br><br
+              <label for="#">La Velocidad final es: </label> <br>
+              <textarea name="Dresultado" id="VFTresultado" cols="15" rows="1"></textarea>
+              <br><br>
+              <button class="bt" type="button"  onclick="limpiarVft()">nuevo</button>
+          </form>
+  
+          
+       
+      </div>
+      </div>
+    </div>
+
+<script src="./Js/formulaMRUV.Js"></script>
+  
+<footer class="footer1">
+
+    <img id="logoFooter" src="Image/logo hq.png" />
+    <p><strong>Henry Isai Quenun cruz <br> 2290-20-6883</strong></p> 
+     </footer>
+</body>
+</html>

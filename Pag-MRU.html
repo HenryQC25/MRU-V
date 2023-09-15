@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MRU</title>
+    <link rel="stylesheet" href="/Css/estilosMRU.css" />
+  </head>
+  <body>
+    <div class="gridP">
+      <header class="header1">
+        <div class="navbar">
+          <div class="logo"></div>
+          <ul class="links">
+            <li>
+              <a href="index.html"><strong>Inicio</strong></a>
+            </li>
+            <li>
+              <a href="Pag-MRU.html"><strong>MRU</strong></a>
+            </li>
+            <li>
+              <a href="Pag-MRUV.html"><strong>MRUV</strong></a>
+            </li>
+          </ul>
+        </div>
+      </header>
+
+      <div class="contenido">
+        <div>
+          <h1>MRU - Movimiento rectilineo uniforme</h1>
+          <p>
+            El Movimiento Rectilíneo Uniforme (MRU) es un tipo de movimiento en
+            el que un objeto se desplaza en línea recta a una velocidad
+            constante. Esto significa que el objeto se mueve siempre a la misma
+            velocidad y en la misma dirección, sin cambiar su rapidez ni su
+            trayectoria, en un MRU, la distancia que recorre el objeto en cada
+            unidad de tiempo es siempre la misma. No importa si el objeto se
+            está moviendo rápido o despacio, seguirá desplazándose en línea
+            recta a esa misma velocidad constante. Un ejemplo común de MRU es
+            cuando conduces tu automóvil a una velocidad constante en una
+            carretera recta y plana. Mientras mantengas esa velocidad y
+            dirección, estás experimentando un MRU. El MRU es un movimiento en
+            línea recta en el que la velocidad del objeto no cambia, lo que lo
+            hace bastante simple de entender y aplicar en situaciones
+            cotidianas.
+          </p>
+        </div>
+        <hr />
+        <div></div>
+        <div class="imagenes">
+          <img id="img1" src="Image/mruFormula.jpg" />
+          <img id="img2" src="Image/mruf2.png" />
+        </div>
+        <hr />
+        <h2>En este apartado podras resolver ejercicios ingresando los datos que tienes</h2>
+        <div class="formulas-area">
+        <form class="formulario">
+            <p><strong>Calcular Distancia</strong></p>
+            <label for="#">Dato Velocidad</label> <br>
+            <input type="number" id="Dvelocidad"  placeholder="velocidad">
+            <br>
+            <label for="#">Dato Tiempo</label> <br>
+            <input type="number" id="Dtiempo"  placeholder="tiempo">
+            <br><br>
+            <button class="bt" type="button"  onclick="DistanciaC()">Calcular</button>
+            <br><br>
+            <label for="#">La Distancia es: </label> <br>
+            <textarea name="Dresultado" id="Dresultado" cols="15" rows="1"></textarea>
+            <br><br>
+            <button class="bt" type="button"  onclick="limpiarD()">nuevo</button>
+        </form>
+
+        <form class="formulario">
+            <p><strong>Calcular Velocidad</strong></p>
+            <label for="#">Dato Distancia</label> <br>
+            <input type="number" id="Vdistancia"  placeholder="distancia">
+            <br>
+            <label for="#">Dato Tiempo</label> <br>
+            <input type="number" id="Vtiempo"  placeholder="tiempo">
+            <br><br>
+            <button class="bt" type="button"  onclick="VelocidadC()">Calcular</button>
+            <br><br
+            <label for="#">La Velocidad es: </label> <br>
+            <textarea name="Vresultado" id="Vresultado" cols="15" rows="1"></textarea>
+            <br><br>
+            <button class="bt" type="button"  onclick="limpiarV()">nuevo</button>
+        </form>
+
+        <form class="formulario">
+            <p><strong>Calcular Tiempo</strong></p>
+            <label for="#">Dato Distancia</label> <br>
+            <input type="number" id="Tdistancia"  placeholder="distancia">
+            <br>
+            <label for="#">Dato Velocidad</label> <br>
+            <input type="number" id="Tvelocidad" placeholder="velocidad">
+            <br><br>
+            <button class="bt" type="button"  onclick="TiempoC()">Calcular</button>
+            <br><br>
+            <label for="#">El Tiempo es: </label> <br>
+            <textarea  id="Tresultado" cols="15" rows="1"></textarea> <br>
+            <br><br>
+            <button class="bt" type="button"  onclick="limpiarT()">nuevo</button>
+        </form>
+
+    </div>
+      </div>
+    </div>
+
+<script src="./Js/formulaMRU.Js"></script>
+  
+<footer class="footer1">
+
+    <img id="logoFooter" src="Image/logo hq.png" />
+    <p><strong>Henry Isai Quenun cruz <br> 2290-20-6883</strong></p> 
+     </footer>
+</body>
+</html>
